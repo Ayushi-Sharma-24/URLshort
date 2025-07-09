@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S H R I N K I F Y-URL Shortener</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,600;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <h1> 🔗 SHRINKIFY </h1>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+              
+                <ul>
+                    <li> <a href =""> HOME </a></li>
+                    <li> <a href =""> MANAGE URLS</a></li>
+                    <li> <a href =""> ABOUT</a></li>
+                  <li> <a href =""> CONTACT </a></li></ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+         
+        </nav>
+
+        <div class="text-box">
+            <h1> CUT THE CLUTTER FROM YOUR LINKS </h1>
+            <p>  Tired of long URLs ? Our tool lets you shorten them <br> in a single click and copy them instantly.<br>
+                 No sign-ups. No ads . Just fast results.<br>
+                 Paste your long URL below and get a short one instantly !</p>
+                 <a href="" class="hero-btn"> Try it now.Paste.Shorten.Copy</a>
+        </div>
+        
+    </section>
+
+    <!-------javascript for toggle menu------>
+    
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu()
+        {
+            navLinks.style.right="0";
+        }
+        function hideMenu() {
+            navLinks.style.right="-200px";
+
+        }
+    </script>
+    
+</body>
+</html>

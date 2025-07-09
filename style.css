@@ -1,0 +1,148 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins' , sans-serif;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("images/onemore.png");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+}
+ nav h1{
+   
+      color: black;
+      font-size: 3.5rem;
+      font-family:'Segoe UI' , sans-serif;
+      animation: glowText 2s ease-in-out infinite alternate;
+ }
+
+    @keyframes glowText {
+      0% {
+        text-shadow: 0 0 5px #f0ffff, 0 0 10px #f0ffff, 0 0 15px  #f0ffff ;
+      }
+      100% {
+        text-shadow: 0 0 10px #f0ffff, 0 0 20px #f0ffff, 0 0 30px #f0ffff ;
+      }
+    }
+
+ nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+ }
+
+ .nav-links {
+  flex: 1;
+  text-align: right;
+
+ } 
+
+ .nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+ }
+
+ .nav-links ul li a{
+  color:#fff;
+  text-decoration: none;
+  font-size: 13px;
+ }
+  .nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin:auto;
+    transition: 0.5s;
+  }
+   .nav-links ul li:hover::after {
+    width: 100%;
+   }
+
+   .text-box{
+    width: 98%;
+    color: #fff;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+   }
+   .text-box h1{
+    font-size: 50px;
+   }
+   .text-box p{
+    margin: 10px 0 40px;
+    font-size: 16px;
+   }
+   .hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 14px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    color:#fff;
+    
+   }
+
+   .hero-btn:hover {
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+   }
+
+   nav .fa{
+    display: none;
+   }
+   @media(max-width: 700px)
+   {
+    .text-box h1{
+      font-size: 18px;
+    }
+    nav link ul li{
+      display:block;
+    }
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+    .nav-links{
+      position: absolute;
+      background: #f44336;
+      height:100vh;
+      width: 200px;
+      top:0;
+      right:-200px;
+      text-align: left;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      transition: 1s;
+    }
+    .nav-links a {
+      padding: 10px 20px;
+      width: 100%;
+      text-align: left;
+    }
+    nav .fa {
+      display: block;
+      color: #fff;
+      font-size: 22px;
+      cursor:pointer;
+        }
+   }
+  
